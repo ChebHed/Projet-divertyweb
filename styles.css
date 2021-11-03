@@ -1,0 +1,204 @@
+/**
+*Styles.css 
+*maj par hedy
+*/
+
+/* reset  */
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border:solid 1px black; */
+}
+/* font-face */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+@font-face {
+  font-family: MyWebFont;
+  src: url("fonts/Lato/Lato-Black.woff2") format(".woff2"),
+    url("fonts/Lato/Lato-Black.woff") format("woff"),
+    url("fonts/Lato/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: dosis;
+  src: url("fonts/Dosis/transfonter.org-20210929-075943/Dosis-ExtraLight.woff2")
+      format(".woff2"),
+    url("fonts/Dosis/transfonter.org-20210929-075943/Dosis-ExtraLight.woff")
+      format("woff"),
+    url("fonts/Dosis/transfonter.org-20210929-075943/Dosis-VariableFont_wght.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "DroidSerif";
+  src: url("https://rawgit.com/google/fonts/master/ufl/ubuntu/Ubuntu-Bold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DroidSerif";
+  src: url("https://rawgit.com/google/fonts/master/ufl/ubuntumono/UbuntuMono-Italic.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Style general */
+
+.hidden{
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  clip: rect(1px,1px,1px,1px);
+}
+
+
+/** liens **/
+
+a:link { color: blue; }          /* Liens non visités */
+a:visited { color: greenyellow; }/*Liens visités */    
+a:hover { background: yellow; }  /* Liens survolés */
+a:active { background: red; } /*Liens actifs*/
+
+/* .active, .active a{ 
+    background-color: black;
+    color: white;
+}         Liens actifs */
+
+
+/*sert à display*/
+
+
+.lg {
+    background-image: linear-gradient(white, rgb(93, 93, 184));
+    min-height: 100vh;
+    background-size: cover;
+
+  }
+.primary-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding:1em;
+}
+
+
+/* Menus */
+
+ul.menu{
+    text-align: center;
+    display: flex;
+    font-family: "MyWebFont";
+}
+
+.menu li{
+    padding:1em;
+    list-style-type: none;
+}
+
+/* li {
+    display: inline;
+  } */
+
+
+.texte-index{
+    display: block;
+    width: 600px;
+}
+
+
+.texte-index-1{
+    display: block;
+    margin-top: 2em;
+    font-family: dosis;
+    font-size: 2em;
+    color: rgb(109, 76, 230); 
+}
+
+.texte-index-2{
+    display: block;
+    font-family: dosis;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*  */
+
+/* .button{
+    font-family: "MyWebFont";
+    border: none;
+    border-radius: 12px;
+    color: rgb(76, 76, 187);
+    background-color: #e7e7e7;
+    padding: 15px 32px;
+    margin: 4px 2px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+} */
+
+
+/* 
+.button:hover{
+    background-color: rgb(246, 245, 255);
+    color: black;
+} */
+
+.btn-resa{
+    font-family: "MyWebFont";
+    border: none;
+    border-radius: 12px;
+    /* color: rgb(76, 76, 187); */
+    background-color: #e7e7e7;
+    padding:0.4em;
+    /* padding: 15px 32px;
+    margin: 4px 2px;  */
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.resa{
+    display: block;
+    margin: 0 auto;
+    margin-top: 7em;
+    width: 400px;
+    height: 200px;
+}
+
+.perso{
+    margin-left: 600px;
+    margin-top: -200px ;
+}
+
+  
+.perso svg{
+    position: relative;
+    display: block;
+    
+}
